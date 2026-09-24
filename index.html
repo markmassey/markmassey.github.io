@@ -1,0 +1,3372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mark Massey | Business & Commercial Professional</title>
+
+<meta
+name="description"
+content="Mark Massey — Business Analyst, Digital Sales, Business Development, Project Management and Privacy Operations."
+>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+rel="stylesheet"
+>
+
+<style>
+
+/* =========================================
+   VARIABLES
+========================================= */
+
+:root {
+
+  --bg: #07070a;
+  --bg2: #0c0c11;
+
+  --card: #111117;
+  --card2: #17171f;
+
+  --violet: #7c3aed;
+  --violet2: #9333ea;
+  --violet3: #a855f7;
+  --lavender: #c4b5fd;
+
+  --white: #f8f8fa;
+  --text: #d4d4d8;
+  --muted: #a1a1aa;
+  --darkmuted: #71717a;
+
+  --border: rgba(255,255,255,0.09);
+
+  --max: 1250px;
+}
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  background: var(--bg);
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+::selection {
+  background: var(--violet);
+  color: white;
+}
+
+
+/* =========================================
+   GLOBAL
+========================================= */
+
+.container {
+  width: min(92%, var(--max));
+  margin: auto;
+}
+
+.section {
+  padding: 130px 0;
+  position: relative;
+}
+
+.eyebrow {
+  font-family: "DM Mono", monospace;
+  color: var(--lavender);
+  font-size: 11px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.section-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(45px, 7vw, 90px);
+  line-height: .92;
+  letter-spacing: -.055em;
+  max-width: 950px;
+}
+
+.gradient {
+  background:
+    linear-gradient(
+      110deg,
+      #ffffff 0%,
+      #ddd6fe 35%,
+      #a855f7 70%,
+      #7c3aed 100%
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.btn {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 14px 20px;
+
+  border: 1px solid var(--border);
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  transition: .3s ease;
+
+  cursor: pointer;
+}
+
+.btn-primary {
+
+  background: var(--violet);
+
+  border-color: var(--violet);
+
+  color: white;
+}
+
+.btn-primary:hover {
+
+  background: var(--violet3);
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 15px 40px
+    rgba(124,58,237,.25);
+}
+
+.btn-outline:hover {
+
+  border-color: var(--violet3);
+
+  color: var(--lavender);
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+nav {
+
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 999;
+
+  padding: 20px 0;
+
+  background:
+    rgba(7,7,10,.82);
+
+  backdrop-filter: blur(18px);
+
+  border-bottom:
+    1px solid
+    rgba(255,255,255,.05);
+}
+
+.nav-inner {
+
+  width: min(92%, var(--max));
+
+  margin: auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content:
+    space-between;
+}
+
+.logo {
+
+  font-family:
+    "Space Grotesk", sans-serif;
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+  letter-spacing: -.04em;
+}
+
+.logo span {
+  color: var(--violet3);
+}
+
+.nav-links {
+
+  display: flex;
+
+  gap: 30px;
+}
+
+.nav-links a {
+
+  font-family:
+    "DM Mono", monospace;
+
+  font-size: 10px;
+
+  color: var(--muted);
+
+  transition: .25s;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+
+  min-height: 100vh;
+
+  display: flex;
+
+  align-items: center;
+
+  position: relative;
+
+  overflow: hidden;
+
+  padding-top: 100px;
+}
+
+.hero::before {
+
+  content: "";
+
+  position: absolute;
+
+  width: 750px;
+
+  height: 750px;
+
+  right: -200px;
+
+  top: -100px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(124,58,237,.24),
+      transparent 68%
+    );
+
+  pointer-events: none;
+}
+
+.hero-grid {
+
+  position: absolute;
+
+  inset: 0;
+
+  opacity: .13;
+
+  background-image:
+
+    linear-gradient(
+      rgba(255,255,255,.08) 1px,
+      transparent 1px
+    ),
+
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,.08) 1px,
+      transparent 1px
+    );
+
+  background-size: 75px 75px;
+
+  mask-image:
+    linear-gradient(
+      to bottom,
+      black,
+      transparent
+    );
+}
+
+.hero-content {
+
+  position: relative;
+
+  z-index: 2;
+}
+
+.hero-number {
+
+  font-family:
+    "DM Mono", monospace;
+
+  color: var(--darkmuted);
+
+  font-size: 10px;
+
+  letter-spacing: .15em;
+
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+
+  font-family:
+    "Space Grotesk", sans-serif;
+
+  font-size:
+    clamp(
+      80px,
+      15vw,
+      195px
+    );
+
+  line-height: .77;
+
+  letter-spacing: -.085em;
+
+  font-weight: 700;
+}
+
+.hero h1 span {
+  display: block;
+}
+
+.hero-subtitle {
+
+  max-width: 720px;
+
+  margin-top: 55px;
+
+  color: var(--text);
+
+  font-size:
+    clamp(
+      17px,
+      2vw,
+      24px
+    );
+
+  line-height: 1.5;
+}
+
+.hero-subtitle strong {
+  color: white;
+}
+
+.hero-actions {
+
+  display: flex;
+
+  gap: 12px;
+
+  flex-wrap: wrap;
+
+  margin-top: 35px;
+}
+
+.hero-meta {
+
+  display: flex;
+
+  gap: 45px;
+
+  flex-wrap: wrap;
+
+  margin-top: 70px;
+}
+
+.meta small {
+
+  display: block;
+
+  color: var(--darkmuted);
+
+  font-family:
+    "DM Mono", monospace;
+
+  font-size: 9px;
+
+  text-transform: uppercase;
+
+  letter-spacing: .15em;
+}
+
+.meta span {
+
+  display: block;
+
+  margin-top: 5px;
+
+  color: var(--text);
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.about-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    .8fr
+    1.2fr;
+
+  gap: 90px;
+
+  align-items: start;
+}
+
+.about-text {
+
+  color: var(--text);
+
+  font-size: 18px;
+
+  line-height: 1.8;
+}
+
+.about-text p + p {
+  margin-top: 25px;
+}
+
+.about-highlight {
+
+  margin-top: 40px;
+
+  padding-left: 25px;
+
+  border-left:
+    2px solid
+    var(--violet);
+
+  color: white;
+
+  font-size: 16px;
+}
+
+
+/* =========================================
+   CORE AREAS
+========================================= */
+
+.area-grid {
+
+  margin-top: 75px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2,1fr);
+
+  border-top:
+    1px solid var(--border);
+
+  border-left:
+    1px solid var(--border);
+}
+
+.area {
+
+  min-height: 320px;
+
+  padding: 35px;
+
+  border-right:
+    1px solid var(--border);
+
+  border-bottom:
+    1px solid var(--border);
+
+  position: relative;
+
+  overflow: hidden;
+
+  transition: .35s;
+}
+
+.area:hover {
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(124,58,237,.10),
+      transparent
+    );
+
+  transform: translateY(-3px);
+}
+
+.area-number {
+
+  color: var(--violet3);
+
+  font-family:
+    "DM Mono", monospace;
+
+  font-size: 10px;
+}
+
+.area h3 {
+
+  font-family:
+    "Space Grotesk", sans-serif;
+
+  font-size: 34px;
+
+  letter-spacing: -.04em;
+
+  margin-top: 55px;
+}
+
+.area p {
+
+  max-width: 480px;
+
+  margin-top: 18px;
+
+  color: var(--muted);
+
+  font-size: 13px;
+}
+
+.tags {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-top: 25px;
+}
+
+.tag {
+
+  padding: 6px 9px;
+
+  border:
+    1px solid var(--border);
+
+  color: #c4c4ca;
+
+  font-family:
+    "DM Mono", monospace;
+
+  font-size: 9px;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================
+   EXPERIENCE
+========================================= */
+
+.experience-top {
+
+  display: flex;
+
+  justify-content:
+    space-between;
+
+  align-items:
+    flex-end;
+
+  gap: 30px;
+}
+
+.experience-top p {
+
+  max-width: 370px;
+
+  color: var(--muted);
+
+  font-size: 13px;
+}
+
+.timeline {
+
+  margin-top: 75px;
+
+  border-top:
+    1px solid var(--border);
+}
+
+.job {
+
+  display: grid;
+
+  grid-template-columns:
+    180px
+    1fr;
+
+  gap: 60px;
+
+  padding: 55px 0;
+
+  border-bottom:
+    1px solid var(--border);
+
+  transition: .3s;
+}
+
+.job:hover {
+  padding-left: 12px;
+}
+
+.job-date {
+
+  font-family:
+    "DM Mono", monospace;
+
+  color: var(--lavender);
+
+  font-size: 10px;
+
+  text-transform: uppercase;
+}
+
+.job h3 {
+
+  font-family:
+    "Space Grotesk", sans-serif;
+
+  font-size: 31px;
+
+  letter-spacing: -.04em;
+}
+
+.company {
+
+  color: var(--violet3);
+
+  margin-top: 5px;
+
+  font-size: 13px;
+}
+
+.job p {
+
+  max-width: 800px;
+
+  color: var(--muted);
+
+  margin-top: 20px;
+
+  font-size: 14px;
+}
+
+.job ul {
+
+  margin-top: 22px;
+
+  list-style: none;
+}
+
+.job li {
+
+  max-width: 850px;
+
+  color: #b7b7bf;
+
+  font-size: 13px;
+
+  padding:
+    7px 0
+    7px 20px;
+
+  position: relative;
+}
+
+.job li::before {
+
+  content: "↗";
+
+  position: absolute;
+
+  left: 0;
+
+  color: var(--violet3);
+}
+
+
+/* =========================================
+   PROJECTS
+========================================= */
+
+.project-section {
+  background: var(--bg2);
+}
+
+.project-intro {
+
+  max-width: 680px;
+
+  margin-top: 25px;
+
+  color: var(--muted);
+
+  font-size: 14px;
+}
+
+.project-card {
+
+  margin-top: 65px;
+
+  border:
+    1px solid var(--border);
+
+  background:
+    var(--card);
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  overflow: hidden;
+}
+
+.project-visual {
+
+  min-height: 570px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background:
+
+    radial-gradient(
+      circle at 25% 25%,
+      rgba(168,85,247,.35),
+      transparent 35%
+    ),
+
+    linear-gradient(
+      135deg,
+      #15151d,
+      #08080b
+    );
+}
+
+.project-visual::before {
+
+  content: "";
+
+  position: absolute;
+
+  width: 550px;
+
+  height: 550px;
+
+  left: -190px;
+
+  bottom: -220px;
+
+  border:
+    1px solid
+    rgba(168,85,247,.35);
+
+  border-radius: 50%;
+}
+
+.project-visual::after {
+
+  content: "";
+
+  position: absolute;
+
+  width: 330px;
+
+  height: 330px;
+
+  right: -80px;
+
+  top: 100px;
+
+  border:
+    1px solid
+    rgba(168,85,247,.28);
+
+  border-radius: 50%;
+}
+
+.project-label {
+
+  position: absolute;
+
+  top: 35px;
+
+  left: 35px;
+
+  color: var(--lavender);
+
+  font-family:
+    "DM Mono", monospace;
+
+  font-size: 9px;
+
+  letter-spacing: .15em;
+}
+
+.project-number {
+
+  position: absolute;
+
+  top: 95px;
+
+  left: 35px;
+
+  color: var(--darkmuted);
+
+  font-family:
+    "DM Mono", monospace;
+
+  font-size: 11px;
+}
+
+.project-big {
+
+  position: absolute;
+
+  left: 35px;
+
+  bottom: 45px;
+
+  font-family:
+    "Space Grotesk", sans-serif;
+
+  font-size:
+    clamp(
+      65px,
+      8vw,
+      110px
+    );
+
+  font-weight: 700;
+
+  line-height: .78;
+
+  letter-spacing: -.08em;
+}
+
+.project-info {
+
+  padding: 60px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.project-info h3 {
+
+  font-family:
+    "Space Grotesk", sans-serif;
+
+  font-size:
+    clamp(
+      38px,
+      4vw,
+      58px
+    );
+
+  line-height: .94;
+
+  letter-spacing: -.055em;
+}
+
+.project-info > p {
+
+  color: var(--muted);
+
+  font-size: 14px;
+
+  margin-top: 25px;
+
+  max-width: 530px;
+}
+
+.project-details {
+
+  margin-top: 35px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2,1fr);
+
+  gap: 15px;
+}
+
+.detail {
+
+  padding-top: 15px;
+
+  border-top:
+    1px solid var(--border);
+}
+
+.detail strong {
+
+  display: block;
+
+  font-family:
+    "Space Grotesk", sans-serif;
+
+  font-size: 26px;
+}
+
+.detail span {
+
+  color: var(--darkmuted);
+
+  font-size: 10px;
+}
+
+
+/* =========================================
+   PROJECT PROCESS
+========================================= */
+
+.process {
+
+  margin-top: 25px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(5,1fr);
+
+  border:
+    1px solid var(--border);
+}
+
+.process-step {
+
+  min-height: 175px;
+
+  padding: 25px;
+
+  border-right:
+    1px solid var(--border);
+}
+
+.process-step:last-child {
+  border-right: 0;
+}
+
+.process-step span {
+
+  color: var(--violet3);
+
+  font-family:
+    "DM Mono", monospace;
+
+  font-size: 10px;
+}
+
+.process-step h4 {
+
+  margin-top: 45px;
+
+  font-family:
+    "Space Grotesk", sans-serif;
+
+  font-size: 17px;
+}
+
+.process-step p {
+
+  margin-top: 5px;
+
+  color: var(--darkmuted);
+
+  font-size: 10px;
+}
+
+
+/* =========================================
+   CERTIFICATIONS
+========================================= */
+
+.cert-intro {
+
+  margin-top: 25px;
+
+  max-width: 650px;
+
+  color: var(--muted);
+
+  font-size: 14px;
+}
+
+.cert-grid {
+
+  margin-top: 65px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2,1fr);
+
+  gap: 18px;
+}
+
+.cert {
+
+  min-height: 260px;
+
+  padding: 32px;
+
+  border:
+    1px solid var(--border);
+
+  background:
+    var(--card);
+
+  transition: .3s;
+
+  position: relative;
+}
+
+.cert:hover {
+
+  transform:
+    translateY(-5px);
+
+  border-color:
+    rgba(168,85,247,.45);
+}
+
+.cert-status {
+
+  color: var(--violet3);
+
+  font-family:
+    "DM Mono", monospace;
+
+  font-size: 9px;
+
+  text-transform: uppercase;
+
+  letter-spacing: .15em;
+}
+
+.cert h3 {
+
+  margin-top: 25px;
+
+  font-family:
+    "Space Grotesk", sans-serif;
+
+  font-size: 24px;
+
+  line-height: 1.1;
+}
+
+.cert p {
+
+  margin-top: 15px;
+
+  color: var(--muted);
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   EDUCATION
+========================================= */
+
+.education-grid {
+
+  margin-top: 65px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2,1fr);
+
+  gap: 18px;
+}
+
+.education-card {
+
+  min-height: 350px;
+
+  padding: 35px;
+
+  border:
+    1px solid var(--border);
+
+  background:
+    var(--card);
+}
+
+.education-year {
+
+  color: var(--violet3);
+
+  font-family:
+    "DM Mono", monospace;
+
+  font-size: 10px;
+}
+
+.education-card h3 {
+
+  margin-top: 45px;
+
+  font-family:
+    "Space Grotesk", sans-serif;
+
+  font-size: 32px;
+
+  line-height: 1.05;
+
+  letter-spacing: -.04em;
+}
+
+.education-card .institution {
+
+  margin-top: 15px;
+
+  color: var(--lavender);
+
+  font-size: 13px;
+}
+
+.education-card p {
+
+  margin-top: 25px;
+
+  color: var(--muted);
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+.modules {
+
+  margin-top: 20px;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+}
+
+.module {
+
+  border:
+    1px solid var(--border);
+
+  padding: 6px 9px;
+
+  font-size: 9px;
+
+  color: #bcbcc4;
+
+  font-family:
+    "DM Mono", monospace;
+}
+
+
+/* =========================================
+   TOOLS
+========================================= */
+
+.tools {
+
+  margin-top: 60px;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 9px;
+}
+
+.tool {
+
+  padding: 12px 16px;
+
+  border:
+    1px solid var(--border);
+
+  color: #d4d4d8;
+
+  font-family:
+    "DM Mono", monospace;
+
+  font-size: 10px;
+
+  transition: .25s;
+}
+
+.tool:hover {
+
+  border-color:
+    var(--violet);
+
+  color:
+    var(--lavender);
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact {
+
+  min-height: 75vh;
+
+  display: flex;
+
+  align-items: center;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.contact::before {
+
+  content: "";
+
+  position: absolute;
+
+  width: 650px;
+
+  height: 650px;
+
+  right: -150px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(124,58,237,.22),
+      transparent 70%
+    );
+}
+
+.contact h2 {
+
+  position: relative;
+
+  font-family:
+    "Space Grotesk", sans-serif;
+
+  font-size:
+    clamp(
+      65px,
+      11vw,
+      155px
+    );
+
+  line-height: .8;
+
+  letter-spacing: -.08em;
+
+  max-width: 1000px;
+}
+
+.contact-copy {
+
+  position: relative;
+
+  margin-top: 45px;
+
+  max-width: 580px;
+
+  color: var(--muted);
+
+  font-size: 14px;
+}
+
+.contact-actions {
+
+  position: relative;
+
+  margin-top: 30px;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+}
+
+.contact-details {
+
+  position: relative;
+
+  margin-top: 50px;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 40px;
+}
+
+.contact-detail small {
+
+  display: block;
+
+  color: var(--darkmuted);
+
+  font-family:
+    "DM Mono", monospace;
+
+  font-size: 9px;
+
+  text-transform: uppercase;
+}
+
+.contact-detail a {
+
+  display: block;
+
+  margin-top: 5px;
+
+  color: var(--text);
+
+  font-size: 13px;
+
+  transition: .2s;
+}
+
+.contact-detail a:hover {
+  color: var(--lavender);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+  border-top:
+    1px solid var(--border);
+
+  padding: 25px 0;
+
+  color: var(--darkmuted);
+
+  font-family:
+    "DM Mono", monospace;
+
+  font-size: 9px;
+
+  display: flex;
+
+  justify-content:
+    space-between;
+
+  gap: 20px;
+}
+
+
+/* =========================================
+   ANIMATION
+========================================= */
+
+.reveal {
+
+  opacity: 0;
+
+  transform:
+    translateY(30px);
+
+  transition:
+    opacity .8s ease,
+    transform .8s ease;
+}
+
+.reveal.visible {
+
+  opacity: 1;
+
+  transform:
+    translateY(0);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:900px) {
+
+  .nav-links {
+    display: none;
+  }
+
+  .section {
+    padding: 90px 0;
+  }
+
+  .about-grid {
+
+    grid-template-columns:
+      1fr;
+
+    gap: 45px;
+  }
+
+  .area-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .job {
+
+    grid-template-columns:
+      1fr;
+
+    gap: 18px;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .project-visual {
+    min-height: 430px;
+  }
+
+  .process {
+
+    grid-template-columns:
+      repeat(2,1fr);
+  }
+
+  .process-step {
+    border-bottom:
+      1px solid var(--border);
+  }
+
+  .cert-grid,
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media(max-width:600px) {
+
+  .hero h1 {
+    font-size: 70px;
+  }
+
+  .hero-meta {
+    gap: 25px;
+  }
+
+  .project-info {
+    padding: 35px 25px;
+  }
+
+  .project-big {
+    font-size: 68px;
+  }
+
+  .project-details {
+    grid-template-columns: 1fr;
+  }
+
+  .process {
+    grid-template-columns: 1fr;
+  }
+
+  .process-step {
+    border-right: 0;
+  }
+
+  .contact h2 {
+    font-size: 68px;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     NAVIGATION
+========================================= -->
+
+<nav>
+
+<div class="nav-inner">
+
+<a
+href="#top"
+class="logo"
+>
+MM<span>.</span>
+</a>
+
+
+<div class="nav-links">
+
+<a href="#about">
+ABOUT
+</a>
+
+<a href="#experience">
+EXPERIENCE
+</a>
+
+<a href="#projects">
+PROJECTS
+</a>
+
+<a href="#certifications">
+CERTIFICATIONS
+</a>
+
+<a href="#education">
+EDUCATION
+</a>
+
+<a href="#contact">
+CONTACT
+</a>
+
+</div>
+
+
+<a
+href="#contact"
+class="btn btn-outline"
+>
+LET'S CONNECT ↗
+</a>
+
+</div>
+
+</nav>
+
+
+
+<main id="top">
+
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<section class="hero">
+
+<div class="hero-grid"></div>
+
+<div class="container hero-content">
+
+<div class="hero-number">
+
+01 / BUSINESS × TECHNOLOGY × OPERATIONS
+
+</div>
+
+
+<h1>
+
+<span>
+MARK
+</span>
+
+<span class="gradient">
+MASSEY.
+</span>
+
+</h1>
+
+
+<p class="hero-subtitle">
+
+<strong>
+Business & Commercial Professional
+</strong>
+
+with an MSc in International Business,
+combining business development, sales,
+analytical thinking, customer experience
+and operational excellence.
+
+</p>
+
+
+<div class="hero-actions">
+
+<a
+href="#experience"
+class="btn btn-primary"
+>
+EXPLORE MY EXPERIENCE →
+</a>
+
+<a
+href="#projects"
+class="btn btn-outline"
+>
+VIEW PROJECTS
+</a>
+
+</div>
+
+
+<div class="hero-meta">
+
+
+<div class="meta">
+
+<small>
+Focus
+</small>
+
+<span>
+Business Analysis
+</span>
+
+</div>
+
+
+<div class="meta">
+
+<small>
+Commercial
+</small>
+
+<span>
+Digital Sales & Business Development
+</span>
+
+</div>
+
+
+<div class="meta">
+
+<small>
+Operations
+</small>
+
+<span>
+Trust & Safety
+</span>
+
+</div>
+
+
+<div class="meta">
+
+<small>
+Based
+</small>
+
+<span>
+Dublin, Ireland
+</span>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================
+     ABOUT
+========================================= -->
+
+<section
+class="section"
+id="about"
+>
+
+<div class="container">
+
+<div class="about-grid reveal">
+
+
+<div>
+
+<div class="eyebrow">
+02 / ABOUT
+</div>
+
+
+<h2 class="section-title">
+
+Business thinking.
+
+<span class="gradient">
+Operational experience.
+</span>
+
+</h2>
+
+</div>
+
+
+<div class="about-text">
+
+<p>
+
+I am an MSc International Business graduate
+with experience across business development,
+customer operations, Trust & Safety and team
+leadership in fast-paced environments.
+
+</p>
+
+
+<p>
+
+My professional background combines commercial
+awareness, customer engagement, market research,
+structured decision-making and operational
+excellence.
+
+</p>
+
+
+<p>
+
+I enjoy understanding how businesses grow,
+how customers make decisions and how structured
+processes can create better outcomes.
+
+</p>
+
+
+<div class="about-highlight">
+
+My career focus sits at the intersection of
+
+<strong>
+business, technology, commercial growth
+and operations.
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================
+     PROFESSIONAL FOCUS
+========================================= -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="eyebrow reveal">
+03 / PROFESSIONAL FOCUS
+</div>
+
+
+<h2 class="section-title reveal">
+
+What I
+<span class="gradient">
+bring.
+</span>
+
+</h2>
+
+
+<div class="area-grid">
+
+
+<div class="area reveal">
+
+<div class="area-number">
+01
+</div>
+
+<h3>
+Business Analysis
+</h3>
+
+<p>
+
+Using market research, competitor analysis,
+data interpretation and structured problem-solving
+to understand business challenges and opportunities.
+
+</p>
+
+<div class="tags">
+
+<span class="tag">
+Market Research
+</span>
+
+<span class="tag">
+Analysis
+</span>
+
+<span class="tag">
+Problem Solving
+</span>
+
+<span class="tag">
+Data Interpretation
+</span>
+
+</div>
+
+</div>
+
+
+
+<div class="area reveal">
+
+<div class="area-number">
+02
+</div>
+
+<h3>
+Digital Sales
+</h3>
+
+<p>
+
+Understanding customer needs, identifying
+commercial opportunities, supporting client
+relationships and contributing to sales growth.
+
+</p>
+
+<div class="tags">
+
+<span class="tag">
+Lead Generation
+</span>
+
+<span class="tag">
+Needs Discovery
+</span>
+
+<span class="tag">
+CRM
+</span>
+
+<span class="tag">
+Pipeline
+</span>
+
+</div>
+
+</div>
+
+
+
+<div class="area reveal">
+
+<div class="area-number">
+03
+</div>
+
+<h3>
+Business Development
+</h3>
+
+<p>
+
+Experience across prospect qualification,
+market research, commercial outreach, client
+relationships and business opportunity identification.
+
+</p>
+
+<div class="tags">
+
+<span class="tag">
+Prospecting
+</span>
+
+<span class="tag">
+Client Relations
+</span>
+
+<span class="tag">
+Competitor Research
+</span>
+
+<span class="tag">
+Commercial Strategy
+</span>
+
+</div>
+
+</div>
+
+
+
+<div class="area reveal">
+
+<div class="area-number">
+04
+</div>
+
+<h3>
+Project & Operations
+</h3>
+
+<p>
+
+Experience coordinating teams, supporting
+onboarding, improving processes and maintaining
+operational standards in fast-paced environments.
+
+</p>
+
+<div class="tags">
+
+<span class="tag">
+Project Coordination
+</span>
+
+<span class="tag">
+Operations
+</span>
+
+<span class="tag">
+Process Improvement
+</span>
+
+<span class="tag">
+Stakeholders
+</span>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================
+     EXPERIENCE
+========================================= -->
+
+<section
+class="section"
+id="experience"
+>
+
+<div class="container">
+
+
+<div class="experience-top reveal">
+
+
+<div>
+
+<div class="eyebrow">
+04 / EXPERIENCE
+</div>
+
+
+<h2 class="section-title">
+
+Experience
+<span class="gradient">
+that connects.
+</span>
+
+</h2>
+
+</div>
+
+
+<p>
+
+A professional journey spanning business
+development, commercial environments,
+leadership and Trust & Safety operations.
+
+</p>
+
+</div>
+
+
+
+<div class="timeline">
+
+
+<!-- ACCENTURE -->
+
+<article class="job reveal">
+
+
+<div class="job-date">
+MAR 2026 — PRESENT
+</div>
+
+
+<div>
+
+<h3>
+Trust & Safety Analyst
+</h3>
+
+
+<div class="company">
+Accenture · Dublin, Ireland
+</div>
+
+
+<p>
+
+Applying structured reasoning, objective
+decision-making and operational excellence
+within high-volume workflows.
+
+</p>
+
+
+<ul>
+
+<li>
+Analyse high-volume cases against platform
+policies, applying structured reasoning and
+objective decision-making.
+</li>
+
+<li>
+Investigate complex scenarios, identify key
+risk factors and escalate sensitive cases
+through established operational frameworks.
+</li>
+
+<li>
+Maintain high standards of accuracy,
+productivity and compliance while managing
+competing priorities.
+</li>
+
+<li>
+Interpret evolving policies and guidelines,
+adapting quickly to process changes.
+</li>
+
+<li>
+Collaborate with stakeholders and quality
+teams to support continuous improvement.
+</li>
+
+</ul>
+
+</div>
+
+</article>
+
+
+
+<!-- M&S SHIFT LEAD -->
+
+<article class="job reveal">
+
+
+<div class="job-date">
+JAN 2026 — MAR 2026
+</div>
+
+
+<div>
+
+<h3>
+Shift Lead
+</h3>
+
+
+<div class="company">
+Marks & Spencer · Dublin
+</div>
+
+
+<p>
+
+Promoted into a leadership role based on
+consistent performance, operational reliability
+and leadership potential.
+
+</p>
+
+
+<ul>
+
+<li>
+Led daily shift operations for teams of
+5–8 colleagues.
+</li>
+
+<li>
+Ensured service standards, operational
+efficiency and customer satisfaction.
+</li>
+
+<li>
+Coached and onboarded new team members.
+</li>
+
+<li>
+Supported team productivity and consistent
+service delivery.
+</li>
+
+</ul>
+
+</div>
+
+</article>
+
+
+
+<!-- M&S SALES -->
+
+<article class="job reveal">
+
+
+<div class="job-date">
+OCT 2024 — JAN 2026
+</div>
+
+
+<div>
+
+<h3>
+Sales & Marketing Advisor
+</h3>
+
+
+<div class="company">
+Marks & Spencer · Dublin
+</div>
+
+
+<ul>
+
+<li>
+Engaged with 50+ customers per shift,
+identifying needs and recommending solutions.
+</li>
+
+<li>
+Supported sales performance through proactive
+customer engagement and product promotion.
+</li>
+
+<li>
+Supported customer loyalty and repeat business
+through high-quality service.
+</li>
+
+<li>
+Used customer feedback and purchasing trends
+to support merchandising decisions.
+</li>
+
+</ul>
+
+</div>
+
+</article>
+
+
+
+<!-- WORLD WIDE SYSTEMS -->
+
+<article class="job reveal">
+
+
+<div class="job-date">
+APR 2023 — MAR 2024
+</div>
+
+
+<div>
+
+<h3>
+Business Development Associate
+</h3>
+
+
+<div class="company">
+World Wide Systems · Mumbai, India
+</div>
+
+
+<p>
+
+Commercial experience focused on lead generation,
+market research, client discovery and business
+development.
+
+</p>
+
+
+<ul>
+
+<li>
+Identified and qualified 30+ prospective clients
+through market research, outbound outreach and
+competitor analysis.
+</li>
+
+<li>
+Conducted client discovery conversations to
+understand business challenges and purchasing
+requirements.
+</li>
+
+<li>
+Developed and maintained relationships with
+key decision-makers.
+</li>
+
+<li>
+Collaborated with delivery and operations teams
+on 15+ commercial proposals.
+</li>
+
+<li>
+Analysed market trends, customer needs and
+competitor positioning.
+</li>
+
+<li>
+Prepared sales reports, pipeline updates and
+business insights for senior stakeholders.
+</li>
+
+</ul>
+
+</div>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================
+     PROJECTS
+========================================= -->
+
+<section
+class="section project-section"
+id="projects"
+>
+
+<div class="container">
+
+
+<div class="eyebrow reveal">
+05 / PROJECTS
+</div>
+
+
+<h2 class="section-title reveal">
+
+Research into
+<span class="gradient">
+strategy.
+</span>
+
+</h2>
+
+
+<p class="project-intro reveal">
+
+Selected academic and professional work demonstrating
+commercial thinking, market analysis, strategic research
+and structured decision-making.
+
+</p>
+
+
+
+<div class="project-card reveal">
+
+
+<div class="project-visual">
+
+
+<div class="project-label">
+MSC INTERNATIONAL BUSINESS · 2025
+</div>
+
+
+<div class="project-number">
+PROJECT / 01
+</div>
+
+
+<div class="project-big">
+
+MARKET<br>
+
+<span class="gradient">
+ENTRY.
+</span>
+
+</div>
+
+
+</div>
+
+
+
+<div class="project-info">
+
+
+<div class="eyebrow">
+International Market Entry Strategy
+</div>
+
+
+<h3>
+
+Building a route
+into international markets.
+
+</h3>
+
+
+<p>
+
+Led a team project developing a market-entry
+strategy for three international customer segments,
+evaluating commercial viability and growth potential.
+
+</p>
+
+
+<p>
+
+The project analysed competitors, customer behaviour
+and industry trends to develop recommendations
+covering pricing, positioning, customer acquisition
+and go-to-market strategy.
+
+</p>
+
+
+<div class="project-details">
+
+
+<div class="detail">
+
+<strong>
+3
+</strong>
+
+<span>
+International customer segments
+</span>
+
+</div>
+
+
+<div class="detail">
+
+<strong>
+8+
+</strong>
+
+<span>
+Competitors analysed
+</span>
+
+</div>
+
+
+<div class="detail">
+
+<strong>
+15
+</strong>
+
+<span>
+Slide business case
+</span>
+
+</div>
+
+
+<div class="detail">
+
+<strong>
+4
+</strong>
+
+<span>
+Strategic focus areas
+</span>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="process reveal">
+
+
+<div class="process-step">
+
+<span>
+01
+</span>
+
+<h4>
+Research
+</h4>
+
+<p>
+Market & industry research
+</p>
+
+</div>
+
+
+<div class="process-step">
+
+<span>
+02
+</span>
+
+<h4>
+Analyse
+</h4>
+
+<p>
+Competitor & customer analysis
+</p>
+
+</div>
+
+
+<div class="process-step">
+
+<span>
+03
+</span>
+
+<h4>
+Evaluate
+</h4>
+
+<p>
+Commercial viability
+</p>
+
+</div>
+
+
+<div class="process-step">
+
+<span>
+04
+</span>
+
+<h4>
+Strategise
+</h4>
+
+<p>
+Pricing & positioning
+</p>
+
+</div>
+
+
+<div class="process-step">
+
+<span>
+05
+</span>
+
+<h4>
+Present
+</h4>
+
+<p>
+Business case delivery
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================
+     CERTIFICATIONS
+========================================= -->
+
+<section
+class="section"
+id="certifications"
+>
+
+<div class="container">
+
+
+<div class="eyebrow reveal">
+06 / CERTIFICATIONS
+</div>
+
+
+<h2 class="section-title reveal">
+
+Continuous
+<span class="gradient">
+learning.
+</span>
+
+</h2>
+
+
+<p class="cert-intro reveal">
+
+Professional development across digital marketing,
+business management, project management and
+data analytics.
+
+</p>
+
+
+<div class="cert-grid">
+
+
+<div class="cert reveal">
+
+<div class="cert-status">
+GOOGLE · COMPLETED
+</div>
+
+<h3>
+Google Digital Marketing & E-Commerce
+Professional Certificate
+</h3>
+
+<p>
+
+Developed knowledge across customer journey mapping,
+SEO fundamentals, email marketing, digital engagement
+and e-commerce strategy.
+
+</p>
+
+</div>
+
+
+
+<div class="cert reveal">
+
+<div class="cert-status">
+IBM · COMPLETED · 2025
+</div>
+
+<h3>
+IBM Business Management Certificate
+</h3>
+
+<p>
+
+Focused on agile project planning, stakeholder
+management, project delivery and cross-functional
+coordination.
+
+</p>
+
+</div>
+
+
+
+<div class="cert reveal">
+
+<div class="cert-status">
+GOOGLE · COMPLETED
+</div>
+
+<h3>
+Google Project Management
+</h3>
+
+<p>
+
+Project management learning focused on project
+planning, coordination, delivery, stakeholder
+engagement and structured project execution.
+
+</p>
+
+</div>
+
+
+
+<div class="cert reveal">
+
+<div class="cert-status">
+GOOGLE · COMPLETED
+</div>
+
+<h3>
+Google Data Analytics
+</h3>
+
+<p>
+
+Developed analytical and data-driven thinking
+to support structured problem solving, information
+interpretation and business decision-making.
+
+</p>
+
+</div>
+
+
+
+<div class="cert reveal">
+
+<div class="cert-status">
+GOOGLE · COMPLETED
+</div>
+
+<h3>
+Digital Marketing Specialisations
+</h3>
+
+<p>
+
+Additional Google-certified learning covering
+customer interaction, customer loyalty, email
+marketing and digital customer engagement.
+
+</p>
+
+</div>
+
+
+
+<div class="cert reveal">
+
+<div class="cert-status">
+MICROSOFT EXCEL · COMPLETED
+</div>
+
+<h3>
+Excel — Beginner to Advanced
+</h3>
+
+<p>
+
+Developed practical Excel capability supporting
+business analysis, reporting, organisation and
+data-driven work.
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================
+     EDUCATION
+========================================= -->
+
+<section
+class="section"
+id="education"
+>
+
+<div class="container">
+
+
+<div class="eyebrow reveal">
+07 / EDUCATION
+</div>
+
+
+<h2 class="section-title reveal">
+
+Academic
+<span class="gradient">
+foundation.
+</span>
+
+</h2>
+
+
+<div class="education-grid">
+
+
+<div class="education-card reveal">
+
+
+<div class="education-year">
+AUG 2024 — SEP 2025
+</div>
+
+
+<h3>
+
+Master of Science
+<br>
+
+International Business
+
+</h3>
+
+
+<div class="institution">
+
+National College of Ireland · Dublin
+
+</div>
+
+
+<p>
+
+Postgraduate study focused on international
+business, strategy, marketing, finance and
+organisational decision-making.
+
+</p>
+
+
+<div class="modules">
+
+<span class="module">
+Business Models & Strategy
+</span>
+
+<span class="module">
+Global Business
+</span>
+
+<span class="module">
+Marketing in a Global Environment
+</span>
+
+<span class="module">
+Corporate Governance
+</span>
+
+<span class="module">
+Research Methods
+</span>
+
+<span class="module">
+Global Finance
+</span>
+
+</div>
+
+</div>
+
+
+
+<div class="education-card reveal">
+
+
+<div class="education-year">
+2020 — 2023
+</div>
+
+
+<h3>
+
+Bachelor of Arts
+<br>
+
+English
+
+</h3>
+
+
+<div class="institution">
+
+Indira Gandhi National Open University
+
+</div>
+
+
+<p>
+
+Undergraduate study developing strong foundations
+in communication, written analysis, research and
+critical thinking.
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================
+     TOOLS
+========================================= -->
+
+<section class="section">
+
+<div class="container">
+
+
+<div class="eyebrow reveal">
+08 / TOOLS & SKILLS
+</div>
+
+
+<h2 class="section-title reveal">
+
+The toolkit
+<span class="gradient">
+behind the work.
+</span>
+
+</h2>
+
+
+<div class="tools reveal">
+
+
+<span class="tool">
+Microsoft Excel
+</span>
+
+<span class="tool">
+PowerPoint
+</span>
+
+<span class="tool">
+Microsoft Word
+</span>
+
+<span class="tool">
+Google Workspace
+</span>
+
+<span class="tool">
+Trello
+</span>
+
+<span class="tool">
+Salesforce Exposure
+</span>
+
+<span class="tool">
+HubSpot Exposure
+</span>
+
+<span class="tool">
+Market Research
+</span>
+
+<span class="tool">
+Commercial Reporting
+</span>
+
+<span class="tool">
+Business Documentation
+</span>
+
+<span class="tool">
+Data Interpretation
+</span>
+
+<span class="tool">
+Performance Analysis
+</span>
+
+<span class="tool">
+Lead Generation
+</span>
+
+<span class="tool">
+Client Relationships
+</span>
+
+<span class="tool">
+Competitor Research
+</span>
+
+<span class="tool">
+Process Improvement
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================
+     CONTACT
+========================================= -->
+
+<section
+class="section contact"
+id="contact"
+>
+
+<div class="container">
+
+
+<div class="eyebrow">
+09 / CONTACT
+</div>
+
+
+<h2>
+
+Let's build
+<span class="gradient">
+something.
+</span>
+
+</h2>
+
+
+<p class="contact-copy">
+
+Interested in opportunities across Business Analysis,
+Digital Sales, Business Development, Project Management,
+Privacy Operations and technology-driven businesses.
+
+</p>
+
+
+<div class="contact-actions">
+
+
+<a
+href="mailto:markmassey03@yahoo.com"
+class="btn btn-primary"
+>
+EMAIL ME →
+</a>
+
+
+<a
+href="https://www.linkedin.com/in/markmasseyib"
+target="_blank"
+rel="noopener noreferrer"
+class="btn btn-outline"
+>
+OPEN LINKEDIN ↗
+</a>
+
+
+<a
+href="tel:+353894083348"
+class="btn btn-outline"
+>
+CALL ME ↗
+</a>
+
+
+</div>
+
+
+<div class="contact-details">
+
+
+<div class="contact-detail">
+
+<small>
+Email
+</small>
+
+<a href="mailto:markmassey03@yahoo.com">
+
+markmassey03@yahoo.com
+
+</a>
+
+</div>
+
+
+
+<div class="contact-detail">
+
+<small>
+Phone
+</small>
+
+<a href="tel:+353894083348">
+
++353 89 408 3348
+
+</a>
+
+</div>
+
+
+
+<div class="contact-detail">
+
+<small>
+LinkedIn
+</small>
+
+<a
+href="https://www.linkedin.com/in/markmasseyib"
+target="_blank"
+rel="noopener noreferrer"
+>
+
+linkedin.com/in/markmasseyib
+
+</a>
+
+</div>
+
+
+
+<div class="contact-detail">
+
+<small>
+Location
+</small>
+
+<a href="#top">
+
+Dublin, Ireland
+
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="container">
+
+<span>
+© 2026 Mark Massey
+</span>
+
+<span>
+Business × Technology × Operations
+</span>
+
+</footer>
+
+
+
+<script>
+
+/* =========================================
+   SMOOTH SINGLE-PAGE NAVIGATION
+========================================= */
+
+document
+.querySelectorAll('a[href^="#"]')
+.forEach(link => {
+
+link.addEventListener(
+"click",
+function(event) {
+
+const targetId =
+this.getAttribute("href");
+
+const target =
+document.querySelector(targetId);
+
+if (target) {
+
+event.preventDefault();
+
+target.scrollIntoView({
+
+behavior: "smooth",
+
+block: "start"
+
+});
+
+}
+
+});
+
+});
+
+
+/* =========================================
+   SCROLL REVEAL
+========================================= */
+
+const observer =
+new IntersectionObserver(
+
+(entries) => {
+
+entries.forEach(entry => {
+
+if (entry.isIntersecting) {
+
+entry.target.classList.add(
+"visible"
+);
+
+observer.unobserve(
+entry.target
+);
+
+}
+
+});
+
+},
+
+{
+threshold: .12
+}
+
+);
+
+
+document
+.querySelectorAll(".reveal")
+.forEach(element => {
+
+observer.observe(element);
+
+});
+
+
+/* =========================================
+   HERO PARALLAX
+========================================= */
+
+window.addEventListener(
+"scroll",
+() => {
+
+const grid =
+document.querySelector(
+".hero-grid"
+);
+
+if (!grid) return;
+
+grid.style.transform =
+`translateY(${window.scrollY * .06}px)`;
+
+}
+);
+
+
+/* =========================================
+   ACTIVE NAVIGATION
+========================================= */
+
+const sections =
+document.querySelectorAll(
+"section[id]"
+);
+
+const navLinks =
+document.querySelectorAll(
+".nav-links a"
+);
+
+const sectionObserver =
+new IntersectionObserver(
+
+(entries) => {
+
+entries.forEach(entry => {
+
+if (
+entry.isIntersecting
+) {
+
+navLinks.forEach(link => {
+
+link.style.color = "";
+
+if (
+link.getAttribute("href")
+===
+"#" +
+entry.target.id
+) {
+
+link.style.color =
+"#c4b5fd";
+
+}
+
+});
+
+}
+
+});
+
+},
+
+{
+rootMargin:
+"-35% 0px -55% 0px"
+}
+
+);
+
+
+sections.forEach(section => {
+
+sectionObserver.observe(
+section
+);
+
+});
+
+
+</script>
+
+</body>
+</html>
